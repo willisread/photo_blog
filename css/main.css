@@ -136,7 +136,7 @@ PAGE: ABOUT
 
 .profile-photo {
   display: block;
-  max-width: 100%;
+  max-width: 150px;
   margin: 0 auto 30px;
   border-radius: 100%;
 }
@@ -217,4 +217,12 @@ nav a, nav a:visted {
 /* selected nav link */
 nav a.selected, nav a:hover {
   color: #32673f;
+}
+
+/* ==================================
+    Base Element Styles
+===================================== */
+
+.container {
+  display: flex;
 }

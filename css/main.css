@@ -1,10 +1,20 @@
-/************************************************
-GENERAL
-************************************************/
+/* ==================================
+    Base Element Styles
+===================================== */
+
+* {
+  box-sizing: border-box;
+}
 
 body {
-  font-family: 'Quicksand', sans-serif; 
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.6;
 }
+
+p {
+  font-size: 1em;
+}
+
 #wrapper {
   max-width: 940px;
   margin: 0 auto;
@@ -225,4 +235,14 @@ nav a.selected, nav a:hover {
 
 .container {
   display: flex;
+  flex-wrap: wrap;
+}
+
+/* --------- Float Clearfix --------- */
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+  }
 }

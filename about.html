@@ -3,41 +3,45 @@
   <head>
     <title>William T. McCormick III | Photographer and Developer</title>
     <link rel="stylesheet" href="css/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand|Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
-     <meta name="viewport" content="width=device-width, intial-scale=1.0">
      <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
-      <ahref="index.html" id="logo">
-        <h1>William T. McCormick III</h1>
-        <h2>Photographer and Developer</h2>
-      </a>
-      <nav>
-        <ul>
-         <li><a href="index.html">Photography</a></li>
-         <li><a class="selected" href="about.html">About</a></li>
-         <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <header class="main-header">
+      <div class="container">
+        <a href="index.html" id="logo site-name">
+          <h1>William T. McCormick III</h1>
+          <h2>Photographer and Developer</h2>
+        </a>
+        <nav class="main-nav">
+          <ul class="container">
+          <li><a href="index.html">Photography</a></li>
+          <li><a class="selected" href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div> <!-- /.container for header -->
     </header>
+
     <div id="wrapper">
-      <section>
+      <div class="main-content">
         <img class="profile-photo" src="img/wtm-portrait.jpg" alt="Photograph of William T. McCormick">
         <h3>About</h3>
         <p>Hi, I'm Will McCormick! This is where I share some of my favorite photos from my time spent in Tokyo and my current life back in the US, here in Nashville. When I'm not taking pictures, I enjoy listening to records, baking, and wizarding at coffee among other things. I am also learning to become front end developer currently and would love to collaborate with other like-minded developers.</p>
         <p>If you would like to follow me on Twitter, my username is <a href="https://twitter.com/willisjazz">@willisjazz</a>, but honestly I'm proabably more active on Instagram these days at <a href="https://www.instagram.com/willisread/">@willisread</a>.</p>
-      </section>
-      <footer>
+      </div> <!-- /.main-content -->
+
+      <footer class="main-footer">
         <a href="https://twitter.com/willisjazz"><i class="fab fa-twitter-square fa-3x"></i></a>
         <a href="https://www.facebook.com/willis.read.7/"><i class="fab fa-facebook-square fa-3x"></i></a>
         <a href="https://www.instagram.com/willisread/"><i class="fab fa-instagram fa-3x"></i></a>
         <a href="https://github.com/willisread"><i class="fab fa-github-square fa-3x"></i></a>
         <p>&copy;2018 William T. McCormick Built It.</p>
       </footer>
-    </div>
+
+    </div> <!-- /.wrapper -->
   </body>
 </html>
 

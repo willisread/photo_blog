@@ -3,28 +3,31 @@
   <head>
     <title>William T. McCormick III | Photographer and Web Developer</title>
     <link rel="stylesheet" href="css/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand|Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
-      <a href="index.html" id="logo">
-        <h1>William T. McCormick III</h1>
-        <h2>Photographer and Developer</h2>
-      </a>
-      <nav>
-        <ul class="container">
-         <li><a href="index.html" class="selected">Photography</a></li>
-         <li><a href="about.html">About</a></li>
-         <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <header class="main-header">
+        <div class="container">
+          <a href="index.html" id="logo site-name">
+            <h1>William T. McCormick III</h1>
+            <h2>Photographer and Developer</h2>
+          </a>
+          <nav class="main-nav">
+            <ul class="container">
+              <li><a href="index.html" class="selected">Photography</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+      </div> <!-- /.container for header -->
     </header>
+    
     <div id="wrapper">
-      <section>
+      <div class="main-content">
+        <h1>Photo Gallery</h1>
         <ul id="gallery container">
           <li>
             <a href="img/inokashira-sakura.jpg">
@@ -75,15 +78,17 @@
             </a>
           </li>
         </ul>
-      </section>
-      <footer>
+      </div> <!-- /.main-content -->
+
+      <footer class="main-footer">
         <a href="https://twitter.com/willisjazz"><i class="fab fa-twitter-square fa-3x"></i></a>
         <a href="https://www.facebook.com/willis.read.7/"><i class="fab fa-facebook-square fa-3x"></i></a>
         <a href="https://www.instagram.com/willisread/"><i class="fab fa-instagram fa-3x"></i></a>
         <a href="https://github.com/willisread"><i class="fab fa-github-square fa-3x"></i></a>
         <p>&copy;2018 William T. McCormick Built It.</p>
       </footer>
-    </div>
+      
+    </div> <!-- /.wrapper -->
   </body>
 </html>
 

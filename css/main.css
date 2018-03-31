@@ -13,20 +13,27 @@ body {
 
 p {
   font-size: 1em;
+  margin-bottom: 1em;
 }
 
-#wrapper {
-  max-width: 940px;
+.main-content {
+  width: 90%;
   margin: 0 auto;
-  padding: 0 5%; 
 }
 
 a {
- text-decoration: none; 
+ text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
 }
 
 img {
- max-width: 100%; 
+ max-width: 100%;
+ height: auto;
 }
 
 h3 {
@@ -46,7 +53,7 @@ header {
   width: 100%;
 }
 
-#logo {
+#site-name {
   text-align: center;
   margin: 0;
 }
@@ -216,7 +223,7 @@ color: #fff;
 
 /* links */
 a {
-  color: #599a68;
+  color: green;
 }
 
 /* nav link */
@@ -226,16 +233,17 @@ nav a, nav a:visted {
 
 /* selected nav link */
 nav a.selected, nav a:hover {
-  color: #32673f;
+  color: pink;
 }
 
 /* ==================================
-    Base Element Styles
+    Flexbox
 ===================================== */
 
-.container {
+.flex-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /* --------- Float Clearfix --------- */

@@ -9,6 +9,8 @@
 body {
   font-family: 'Quicksand', sans-serif;
   line-height: 1.6;
+  background-color: #fff;
+  color: #999;
 }
 
 p {
@@ -16,13 +18,9 @@ p {
   margin-bottom: 1em;
 }
 
-.main-content {
-  width: 90%;
-  margin: 0 auto;
-}
-
 a {
- text-decoration: none;
+  text-decoration: none;
+  color: green;
 }
 
 ul {
@@ -32,78 +30,31 @@ ul {
 }
 
 img {
- max-width: 100%;
- height: auto;
+  max-width: 100%;
+  height: auto;
 }
+
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 15px 0;
+  font-size: 1.8em;
+  font-weight: normal;
+  line-height: 0.8em;
+ }
+ 
+ h2 {
+  font-size: 1em;
+  font-weight: normal;
+ }
+
+ h1,
+ h2 {
+  color: #fff;
+ }
 
 h3 {
   margin: 0 0 1em 0;
 }
-
-
-
-/************************************************
-HEADING
-************************************************/
-
-header {
-  float: left;
-  margin: 0 0 30px 0;
-  padding: 5px 0 0 0;
-  width: 100%;
-}
-
-#site-name {
-  text-align: center;
-  margin: 0;
-}
-
-h1 {
- font-family: 'Ubuntu', sans-serif;
- margin: 15px 0;
- font-size: 1.75em;
- font-weight: normal;
- line-height: 0.8em;
-}
-
-h2 {
-  font-size: 0.7em;
-  margin: -5px 0 0;
-  font-weight: normal;
-}
-
-
-
-/************************************************
-NAVIGATION
-************************************************/
-
-nav {
-   text-align: center;
-   padding: 10px 0;
-   margin: 20px 0 0;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0 10px;
-  padding: 0;
-}
-
-nav li {
-  display: inline-block;
-}
-
-nav a {
-  font-weight: 800;
-  padding: 15px 10px;
-}
-
-
-
-/************************************************
-FOOTER
-************************************************/
 
 footer {
   font-size: 0.75 em;
@@ -113,15 +64,57 @@ footer {
   color: #ccc;
 }
 
-.social-icon {
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
+/* ==================================
+    Base Layout Styles
+===================================== */
+/* --------- Navigation Bar --------- */
+
+.main-header {
+  background: #6ab47b;
+  border-color: #599a68;
+}
+.main-nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+  background: #599a68;
 }
 
-/************************************************
-PAGE: PORTFOLIO
-************************************************/
+.main-nav ul {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.main-nav li {
+  display: inline-block;
+}
+
+.main-nav a {
+  font-weight: 800;
+  padding: 15px 20px;
+}
+
+.main-nav a, 
+.main-nav a:visted {
+  color: #fff;
+}
+
+.main-nav a.selected,
+.main-nav a:hover {
+  color: pink;
+}
+
+.site-name {
+  text-align: center;
+  margin: 0;
+}
+
+/* --------- Layout Containers --------- */
+
+.main-content {
+  width: 90%;
+  margin: 0 auto;
+}
 
 #gallery {
   margin: 0;
@@ -144,26 +137,11 @@ PAGE: PORTFOLIO
   color: #bdc3c7;
 }
 
-
-
-
-/************************************************
-PAGE: ABOUT
-************************************************/
-
-.profile-photo {
-  display: block;
-  max-width: 150px;
-  margin: 0 auto 30px;
-  border-radius: 100%;
+.social-icon {
+  margin: 0 8px;
 }
 
-
-
-
-/************************************************
-PAGE: CONTACT
-************************************************/
+/* --------- Page: Contact --------- */
 
 .contact-info {
   list-style: none;
@@ -193,47 +171,13 @@ PAGE: CONTACT
   background-image: url('../img/twitter.png');
 }
 
+/* --------- Page: About --------- */
 
-
-/************************************************
-COLORS
-************************************************/
-
-/* site body */
-body {
-  background-color: #fff;
-  color: #999;
-}
-
-/* green header */
-header {
-  background: #6ab47b;
-  border-color: #599a68;
-}
-
-/* nav background on mobile */
-nav {
-  background: #599a68;
-}
-
-/* logo text */
-h1, h2 {
-color: #fff;
-}
-
-/* links */
-a {
-  color: green;
-}
-
-/* nav link */
-nav a, nav a:visted {
-  color: #fff;
-}
-
-/* selected nav link */
-nav a.selected, nav a:hover {
-  color: pink;
+.profile-photo {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
 }
 
 /* ==================================
@@ -244,6 +188,10 @@ nav a.selected, nav a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.flex-item {
+  flex-grow: 6;
 }
 
 /* --------- Float Clearfix --------- */

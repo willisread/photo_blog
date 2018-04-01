@@ -54,6 +54,7 @@ h1 {
 
 h3 {
   margin: 0 0 1em 0;
+  font-size: 1.3em;
 }
 
 footer {
@@ -182,9 +183,9 @@ footer {
 .profile-photo {
   display: block;
   max-width: 150px;
-  margin: 0 auto 30px;
+  /* margin: 0 auto 30px; */
   border-radius: 100%;
-  padding-top: 50px;
+  margin-top: 50px;
 }
 
 /* ==================================

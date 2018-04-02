@@ -10,7 +10,7 @@ body {
   font-family: 'Quicksand', sans-serif;
   line-height: 1.6;
   background-color: #fff;
-  color: #999;
+  color: #949699;
 }
 
 p {
@@ -20,7 +20,7 @@ p {
 
 a {
   text-decoration: none;
-  color: green;
+  color: #2774c4;
 }
 
 ul {
@@ -49,7 +49,7 @@ h1 {
 
  h1,
  h2 {
-  color: #fff;
+  color: 	#dededd;
  }
 
 h3 {
@@ -62,7 +62,7 @@ footer {
   text-align: center;
   clear: both;
   padding-top: 50px;
-  color: #ccc;
+  color: #949699;
 }
 
 /* ==================================
@@ -71,14 +71,14 @@ footer {
 /* --------- Navigation Bar --------- */
 
 .main-header {
-  background: #6ab47b;
-  border-color: #599a68;
+  background: #2774c4;
+  border-color: #2774c4;
 }
 .main-nav {
   text-align: center;
   padding: 10px 0;
   margin: 20px 0 0;
-  background: #599a68;
+  background: #14a7e0;
 }
 
 .main-nav ul {
@@ -97,12 +97,12 @@ footer {
 
 .main-nav a, 
 .main-nav a:visted {
-  color: #fff;
+  color: #3749ac;
 }
 
 .main-nav a.selected,
 .main-nav a:hover {
-  color: pink;
+  color: #3749ac;
 }
 
 .site-name {
@@ -133,15 +133,15 @@ footer {
   float: left;
   width: 45%;
   margin: 2.5%;
-  background-color: #f5f5f5;
-  color: #bdc3c7;
+  background-color: #dededd;
+  color: #949699;
 }
 
 #gallery li a p {
   margin: 0;
   padding: 5%;
   font-size: 0.75em;
-  color: #bdc3c7;
+  color: #949699;
 }
 
 .social-icon {

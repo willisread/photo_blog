@@ -53,7 +53,7 @@ h1 {
 
 h3 {
   margin: 0 0 1em 0;
-  font-size: 1.3em;
+  font-size: 1.6em;
 }
 
 footer {
@@ -79,6 +79,7 @@ footer {
   padding: 10px 0;
   margin: 20px 0 0;
   background: #14a7e0;
+  font-size: 1em;
 }
 
 .main-nav ul {
@@ -105,6 +106,10 @@ footer {
   padding: 30px 0 10px;
 }
 
+/* .photo {
+  border-radius: 5px;
+} */
+
 /* --------- Layout Containers --------- */
 
 .main-content,
@@ -121,8 +126,7 @@ footer {
 }
 
 #gallery li {
-  float: left;
-  width: 45%;
+  width: 100%;
   margin: 2.5%;
   background-color: #dededd;
   color: #949699;
@@ -131,7 +135,7 @@ footer {
 #gallery li a p {
   margin: 0;
   padding: 5%;
-  font-size: 0.75em;
+  font-size: .9em;
   color: #949699;
 }
 
@@ -145,7 +149,7 @@ footer {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size 0.9em;
+  font-size: 0.9em;
 }
 
 .contact-info a {
@@ -173,7 +177,6 @@ footer {
 .profile-photo {
   display: block;
   max-width: 150px;
-  /* margin: 0 auto 30px; */
   border-radius: 100%;
   margin-top: 50px;
 }
@@ -198,7 +201,6 @@ footer {
   content: " ";
   display: table;
   clear: both;
-  }
 }
 
 /* ==================================
@@ -207,35 +209,32 @@ footer {
 
 @media screen and (min-width: 659px) {
   
-  .main-nav li a {
-    font-size: 1.3em;
+  body {
+    line-height: 1.8;
   }
-  #logo {
-    float: left;
-    margin-left: 5%;
-    text-align: left;
-    width: 45%;
-  }
-  
-  h1 {
-    font-size: 2.5em;
-  }
-  
-  h2 {
-    font-size: 0.825em;
-    margin-bottom: 20px;
-  }
-  
-  header {
-    border-bottom: 5px solid #599a68;
-    margin-bottom: 60px;
+
+  .main-nav {
+    font-size: 1.4em;
   }
 
   .main-content,
   .primary-content,
   .secondary-content {
-    width: 60%;
+    width: 75%;
     margin: 0 auto;
+  }
+
+}
+
+@media screen and (min-width: 899px) {
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .flex-item {
+    flex: 1 0 auto;
   }
 
 }

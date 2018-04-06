@@ -115,7 +115,7 @@ footer {
 .main-content,
 .primary-content,
 .secondary-content {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -126,7 +126,7 @@ footer {
 
 #gallery li {
   width: 100%;
-  margin: 2.5%;
+  margin-right: 2.5%;
   list-style: none;
 }
 
